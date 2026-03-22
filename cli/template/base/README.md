@@ -27,3 +27,12 @@ You can check out the [create-t3-app GitHub repository](https://github.com/t3-os
 ## How do I deploy this?
 
 Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+
+## How do I run this as a Docker container?
+
+After setup (`install`, `db:push`, etc.), you can build and run the included Docker image:
+
+```bash
+docker build -t my-t3-app .
+docker run -p 3000:3000 my-t3-app
+```
